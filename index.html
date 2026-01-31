@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>בית"ר ירושלים | סגל 25/26</title>
+<title>בית"ר ירושלים | עונת 2025/26</title>
 
 <style>
 body{
@@ -20,7 +20,7 @@ header{
 header h1{
   margin:0;
   color:#000;
-  font-size:42px;
+  font-size:40px;
 }
 nav{
   background:#111;
@@ -42,22 +42,44 @@ section{
   color:#ffd700;
   border-bottom:3px solid #ffd700;
   display:inline-block;
-  margin-bottom:25px;
+  margin-bottom:20px;
   font-size:28px;
 }
-.players{
+.list{
+  background:#111;
+  border:2px solid #ffd700;
+  padding:20px;
+}
+.list li{
+  margin-bottom:8px;
+  font-size:18px;
+}
+.song{
+  background:#111;
+  border:2px solid #ffd700;
+  padding:20px;
+  margin-bottom:20px;
+}
+.shop{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:20px;
 }
-.player{
-  border:2px solid #ffd700;
+.product{
   background:#111;
+  border:2px solid #ffd700;
+  padding:20px;
+  text-align:center;
 }
-.player img{
-  width:100%;
-  height:320px;
-  object-fit:cover;
+button{
+  background:#ffd700;
+  border:none;
+  padding:10px 18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+button:hover{
+  background:#fff;
 }
 footer{
   background:#111;
@@ -66,55 +88,104 @@ footer{
   color:#ffd700;
 }
 </style>
+
+<script>
+function buy(item){
+  alert("המוצר נוסף לעגלה: " + item);
+}
+</script>
 </head>
 
 <body>
 
 <header>
   <h1>בית"ר ירושלים</h1>
-  <p>סגל עונת 2025/26</p>
+  <p>עונת 2025/26</p>
 </header>
 
 <nav>
-  <a href="#players">שחקנים</a>
+  <a href="#players">סגל הקבוצה</a>
+  <a href="#songs">שירי אוהדים</a>
+  <a href="#shop">חנות</a>
 </nav>
 
 <section id="players">
-<h2 class="title">סגל הקבוצה 25/26</h2>
+<h2 class="title">סגל שחקנים 2025/26</h2>
+<ul class="list">
+  <li>מיגל סילבה</li>
+  <li>איתי מרדכי</li>
+  <li>גריגורי מורוזוב</li>
+  <li>אביב סולומון</li>
+  <li>אופיר קריאף</li>
+  <li>איילון אלמוג</li>
+  <li>דנילו אספרייה</li>
+  <li>ירדן שועה</li>
+  <li>עומר אצילי</li>
+  <li>אילון ירושלמי</li>
+  <li>לי־און מזרחי</li>
+  <li>טימו מוזי</li>
+  <li>אור בלוריאן</li>
+  <li>שי קונסטנטין</li>
+  <li>עידן ורד</li>
+</ul>
+</section>
 
-<div class="players">
+<section id="songs">
+<h2 class="title">שירי אוהדים</h2>
 
-  <div class="player">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Yarden_Shua.jpg">
+<div class="song">
+<h3>💛🖤 הנה היא עולה בית"ר ירושלים</h3>
+<p>
+הנה היא עולה בית"ר ירושלים<br>
+צהוב שחור בלב ובנשמה<br>
+כל טדי קופץ, כל יציע רועד<br>
+יאללה בית"ר עד הניצחון הבא
+</p>
+</div>
+
+<div class="song">
+<h3>💛🖤 בית"ר זה בלב</h3>
+<p>
+בית"ר זה בלב, בית"ר בנשמה<br>
+לא נוותר גם בדקה תשעים<br>
+עולים למגרש נלחמים עד הסוף<br>
+צהוב שחור זה לכל החיים
+</p>
+</div>
+
+<div class="song">
+<h3>💛🖤 יאללה יאללה בית"ר</h3>
+<p>
+יאללה יאללה בית"ר<br>
+תנו את הנשמה<br>
+אנחנו מאחוריכם<br>
+בטדי כל המשחק
+</p>
+</div>
+
+</section>
+
+<section id="shop">
+<h2 class="title">חנות המועדון</h2>
+
+<div class="shop">
+  <div class="product">
+    <h3>חולצת משחק רשמית</h3>
+    <p>₪299</p>
+    <button onclick="buy('חולצת משחק')">קנה עכשיו</button>
   </div>
 
-  <div class="player">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Omer_Atzili.jpg">
+  <div class="product">
+    <h3>צעיף בית"ר</h3>
+    <p>₪79</p>
+    <button onclick="buy('צעיף')">קנה עכשיו</button>
   </div>
 
-  <div class="player">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Miguel_Silva_goalkeeper.jpg">
+  <div class="product">
+    <h3>כובע אוהדים</h3>
+    <p>₪99</p>
+    <button onclick="buy('כובע')">קנה עכשיו</button>
   </div>
-
-  <div class="player">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Danilo_Asprilla.jpg">
-  </div>
-
-  <div class="player">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Ofir_Krivak.jpg">
-  </div>
-
-  <div class="player">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Aviv_Solomon.jpg">
-  </div>
-
-  <!-- תוסיף עוד שחקנים פשוט ע"י שכפול בלוק -->
-  <!--
-  <div class="player">
-    <img src="קישור_לתמונה">
-  </div>
-  -->
-
 </div>
 </section>
 
@@ -124,3 +195,4 @@ footer{
 
 </body>
 </html>
+
