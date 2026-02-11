@@ -3,21 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>בית"ר ירושלים | עונת 2025/26 <!DOCTYPE html>
-<html lang="he" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <title>ביתר ירושלים</title>
-</head>
-<body style="text-align:center; background-color:#000; padding:50px;">
-<img src="BeitarJerusalemCrestStar2020.png" 
-     alt="סמל בית״ר ירושלים" 
-     style="width:150px; margin-top:15px;">
-
-
-</body>
-</html>
-</title>
+<title>בית"ר ירושלים | עונת 2025/26</title>
 
 <style>
 body{
@@ -65,8 +51,19 @@ section{
   padding:20px;
 }
 .list li{
-  margin-bottom:8px;
+  margin-bottom:12px;
   font-size:18px;
+}
+.player-with-img{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.player-with-img img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:2px solid #ffd700;
 }
 .song{
   background:#111;
@@ -101,6 +98,11 @@ footer{
   padding:15px;
   color:#ffd700;
 }
+.transfers p{
+  text-align:center;
+  color:#777;
+  margin:5px 0;
+}
 </style>
 
 <script>
@@ -108,8 +110,8 @@ function buy(item){
   alert("המוצר נוסף לעגלה: " + item);
 }
 </script>
-</head>
 
+</head>
 <body>
 
 <header>
@@ -126,8 +128,13 @@ function buy(item){
 <section id="players">
 <h2 class="title">סגל שחקנים 2025/26</h2>
 <ul class="list">
- <li>מיגל סילבה 55</li>
-  <li>יהונתן עוזר 22</li>
+  <li>מיגל סילבה 55</li>
+
+  <li class="player-with-img">
+    <img src="Artboard-1-copy-43@72x.png" alt="יהונתן עוזר">
+    יהונתן עוזר 22
+  </li>
+
   <li>עמית קורנפיין</li>
   <li>בריאן קראבלי 4</li>
   <li>לוקה גדרני 44</li>
@@ -155,32 +162,30 @@ function buy(item){
 
 <div class="song">
 <h3>💛🖤 מאוהב בך מחדר לידה</h3>
-<p>מאוהב בך מחדר לידה מכור אליך גם כשמפסידה כל השבוע אני בשיגעון לבוא לשיר <br>
+<p>
+מאוהב בך מחדר לידה מכור אליך גם כשמפסידה כל השבוע אני בשיגעון לבוא לשיר<br>
 ולתת את הגרון דבר אחד דורש מכם עם המנורה על החזה<br>
-להלחם עכשיו כולם קופצים כמו שיכורים ושיכורות מאחורכם צבא של ביתרים וביתרות<br>
-
+להלחם עכשיו כולם קופצים כמו שיכורים ושיכורות מאחורכם צבא של ביתרים וביתרות
 </p>
 </div>
 
 <div class="song">
 <h3>💛🖤 לעולם לא תפלי</h3>
 <p>
-לעולם לא תפלי כי אנחנו ביחד אוהבים רק אותך ונותנים תנשמה <br>
+לעולם לא תפלי כי אנחנו ביחד אוהבים רק אותך ונותנים תנשמה<br>
 לא סובל את חיפה אני שונא את הפועל גם מכבי זונה<br>
-אני אוהב את בית"ר<br>
-
+אני אוהב את בית"ר
 </p>
 </div>
 
 <div class="song">
-<h3>💛🖤 ללב נכנסת </h3>
-<p>ללב נכנסת התאהבתי בך<br>
+<h3>💛🖤 ללב נכנסת</h3>
+<p>
+ללב נכנסת התאהבתי בך<br>
 יהיה מה שיהיה<br>
-שתדעי בית"ר אני אוהב אותך<br>
-
+שתדעי בית"ר אני אוהב אותך
 </p>
 </div>
-
 </section>
 
 <section id="shop">
@@ -207,76 +212,45 @@ function buy(item){
 </div>
 </section>
 
-
-</body>
-</html>
-<section id="fans-stats">
-  <h2 class="title">מפורסמים אוהדי בית"ר</h2>
-
-  <div class="list">
-    <ul>
-      <li>⭐ אייל גולן</li>
-      <li>⭐ דודו אהרון </li>
-      <li>⭐ איציק זוהר</li>
-      <li>⭐ בינימן נתניהו </li>
-      <li>⭐ אלי אוחנה</li>
-    </ul>
-  </div>
-
-  <br><br>
-
-  <h2 class="title">כמות אוהדים וקהל</h2>
-
-  <div class="list">
-    <ul>
-      <li>👥 אוהדים רשומים: כ־350,000+</li>
-      <li>🏟️ תכולת אצטדיון טדי: 31,733</li>
-      <li>🔥 ממוצע קהל למשחק בית: 20,000+</li>
-      <li>🟡⚫ אחת הקבוצות עם הקהל החזק בישראל</li>
-    </ul>
-  </div>
+<section>
+<h2 class="title">מפורסמים אוהדי בית"ר</h2>
+<div class="list">
+<ul>
+<li>⭐ אייל גולן</li>
+<li>⭐ דודו אהרון</li>
+<li>⭐ איציק זוהר</li>
+<li>⭐ בנימין נתניהו</li>
+<li>⭐ אלי אוחנה</li>
+</ul>
+</div>
 </section>
-<section id="history-stats">
-  <h2 class="title">סטטיסטיקות היסטוריות</h2>
 
-  <div class="list">
-    <ul>
-      <li>🏆 גביעים רשמיים: 4 גביעי טוטו | 8 גביעי מדינה | 6 אליפויות</li>
-      <li>⚡ ניצחונות זכורים:</li>
-      <ul>
-        <li>6-2 על מכבי תל אביב – בלומפילד, עונת 2025/26</li>
-        <li>5-0 על הפועל תל אביב – בלומפילד</li>
-        <li>2-1 על הפועל תל אביב – טדי, עונת 2024/25</li>
-      </ul>
-      <li>🔥 אחת הקבוצות עם הרקורד החזק מול מכבי חיפה ומכבי תל אביב</li>
-    </ul>
-  </div>
+<section>
+<h2 class="title">סטטיסטיקות היסטוריות</h2>
+<div class="list">
+<ul>
+<li>🏆 4 גביעי טוטו | 8 גביעי מדינה | 6 אליפויות</li>
+<li>⚡ 6-2 על מכבי תל אביב – בלומפילד</li>
+<li>⚡ 5-0 על הפועל תל אביב – בלומפילד</li>
+<li>🔥 אחת הקבוצות עם הקהל החזק בישראל</li>
+</ul>
+</div>
 </section>
-<h1 style="font-size:48px; text-align:center;">
-שחקנים בהשאלה/העברות אחרונות
-</h1>
-<p style="font-size:16px; text-align:center; color:#777;">
-אריאל מנדי מושאל לאשדוד
-  <p style="font-size:16px; text-align:center; color:#777;">
-  רוי ששון מושאל לכפר שלם
-    <p style="font-size:16px; text-align:center; color:#777;">
-  ליאל דרעי מושאל לקש 44
-      <p style="font-size:16px; text-align:center; color:#777;">
-  עילאי חגג מושאל לאשדוד
-      <p style="font-size:16px; text-align:center; color:#777;">
-  נדב מרקוביץ מושאל להפועל רמת גן ליגה לאומית
-        <p style="font-size:16px; text-align:center; color:#777;">
-  שגיא ישראלי מושאל לעירוני מודיעין
-  <p style="font-size:16px; text-align:center; color:#777;">
-אלון בן עמי מושאל לעירוני בית שמש
-  <p style="font-size:16px; text-align:center; color:#777;">
-יאן יוספוב מושאל לעירוני מודיעין
-</p>
-<p style="font-size:16px; text-align:center; color:#777;">
-נאנא אנטווי עבר לביתר מסטיאווה בוקרשט תמורת 240 אלף יורו
-<p style="font-size:16px; text-align:center; color:#777;">
-אביאל זרגרי עבר בהעברה חופשית להרמנסטאד
+
+<section class="transfers">
+<h1 style="font-size:40px;">שחקנים בהשאלה / העברות אחרונות</h1>
+<p>אריאל מנדי מושאל לאשדוד</p>
+<p>רוי ששון מושאל לכפר שלם</p>
+<p>ליאל דרעי מושאל לקש 44</p>
+<p>עילאי חגג מושאל לאשדוד</p>
+<p>נדב מרקוביץ מושאל להפועל רמת גן</p>
+<p>נאנא אנטווי עבר תמורת 240 אלף יורו</p>
+<p>אביאל זרגרי עבר בהעברה חופשית</p>
+</section>
 
 <footer>
 © כל הזכויות שמורות לפאנטה 💛🖤
 </footer>
+
+</body>
+</html>
